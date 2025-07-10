@@ -3,7 +3,7 @@ function FeeSplit() {
       {
         percentage: 72,
         title: "Top 25 Contributors",
-        description: "Weekly rewards for the loudest voices",
+        description: "Weekly rewards for bold hoots",
         icon: "🏆",
         color: "from-pink-400 to-purple-500",
         bgColor: "from-pink-400/20 to-purple-500/20"
@@ -291,7 +291,7 @@ function FeeSplit() {
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 rounded-full" style={{ background: '#A020F0' }}></div>
-                      <span className="text-gray-400 text-xs">Rewards paid in SOL</span>
+                      <span className="text-gray-400 text-xs">Rewards paid in MNT</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-2 h-2 rounded-full" style={{ background: '#FF2E92' }}></div>

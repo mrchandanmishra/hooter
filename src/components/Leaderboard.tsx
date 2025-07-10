@@ -1,192 +1,196 @@
+// import React from 'react';
+
 function Leaderboard() {
-    const leaderboardData = [
-      {
-        rank: 1,
-        user: "Deebs DeFi",
-        handle: "@Deebs_DeFi",
-        avatar: "https://via.placeholder.com/40/FF2E92/FFFFFF?text=DD",
-        verified: true,
-        followers: "45.6K",
-        following: "810",
-        mindshare: "2.625%",
-        change: "+1.043%",
-        earnings: "0.5 SOL",
-        earningsUsd: "$74",
-        isPositive: true,
-        badge: "👑"
-      },
-      {
-        rank: 2,
-        user: "SALAMANDER",
-        handle: "@SALAMANDER12_",
-        avatar: "https://via.placeholder.com/40/A020F0/FFFFFF?text=SA",
-        verified: true,
-        followers: "15.5K",
-        following: "572",
-        mindshare: "2.171%",
-        change: "+1.193%",
-        earnings: "0.4 SOL",
-        earningsUsd: "$61",
-        isPositive: true,
-        badge: "⚡"
-      },
-      {
-        rank: 3,
-        user: "Faded",
-        handle: "@yourfadedwealth",
-        avatar: "https://via.placeholder.com/40/FF2E92/FFFFFF?text=FA",
-        verified: true,
-        followers: "40.5K",
-        following: "1.4K",
-        mindshare: "1.863%",
-        change: "-0.037%",
-        earnings: "0.4 SOL",
-        earningsUsd: "$52",
-        isPositive: false,
-        badge: "🥉"
-      },
-      {
-        rank: 4,
-        user: "Rippy",
-        handle: "@rippyfied",
-        avatar: "https://via.placeholder.com/40/A020F0/FFFFFF?text=RI",
-        verified: true,
-        followers: "5.5K",
-        following: "1.1K",
-        mindshare: "1.833%",
-        change: "+0.797%",
-        earnings: "0.4 SOL",
-        earningsUsd: "$51",
-        isPositive: true,
-        badge: ""
-      },
-      {
-        rank: 5,
-        user: "Nazoku.eth",
-        handle: "@Nazo_ku",
-        avatar: "https://via.placeholder.com/40/FF2E92/FFFFFF?text=NA",
-        verified: true,
-        followers: "10.7K",
-        following: "31",
-        mindshare: "1.520%",
-        change: "+0.675%",
-        earnings: "0.3 SOL",
-        earningsUsd: "$43",
-        isPositive: true,
-        badge: ""
-      },
-      {
-        rank: 6,
-        user: "Tut",
-        handle: "@Tuteth_",
-        avatar: "https://via.placeholder.com/40/A020F0/FFFFFF?text=TU",
-        verified: true,
-        followers: "24.3K",
-        following: "796",
-        mindshare: "1.435%",
-        change: "-0.202%",
-        earnings: "0.3 SOL",
-        earningsUsd: "$40",
-        isPositive: false,
-        badge: ""
-      },
-      {
-        rank: 7,
-        user: "Nick",
-        handle: "@NicholasKGarvin",
-        avatar: "https://via.placeholder.com/40/FF2E92/FFFFFF?text=NI",
-        verified: true,
-        followers: "8.9K",
-        following: "568",
-        mindshare: "1.348%",
-        change: "+1.109%",
-        earnings: "0.3 SOL",
-        earningsUsd: "$38",
-        isPositive: true,
-        badge: ""
-      },
-      {
-        rank: 8,
-        user: "Splin Teron",
-        handle: "@splinteron",
-        avatar: "https://via.placeholder.com/40/A020F0/FFFFFF?text=SP",
-        verified: true,
-        followers: "66.3K",
-        following: "689",
-        mindshare: "1.296%",
-        change: "+0.618%",
-        earnings: "0.3 SOL",
-        earningsUsd: "$35",
-        isPositive: true,
-        badge: ""
-      }
-    ];
-  
-    return (
-      <section className="relative py-16 overflow-hidden mt-[50px]">
-        {/* Background */}
-        <div className="absolute inset-0">
-          <div 
-            className="absolute inset-0 backdrop-blur-sm rounded-3xl mx-4 sm:mx-6 lg:mx-8"
-            style={{ 
-              background: 'rgba(17, 17, 17, 0.4)',
-              border: '1px solid rgba(160, 32, 240, 0.3)'
-            }}
-          ></div>
-        </div>
-  
-        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-            
-            {/* Leaderboard Section */}
-            <div className="lg:col-span-3">
-              <div 
-                className="backdrop-blur-sm rounded-2xl p-6"
-                style={{ 
-                  background: 'rgba(17, 17, 17, 0.6)',
-                  border: '1px solid rgba(160, 32, 240, 0.3)'
-                }}
-              >
+  const leaderboardData = [
+    {
+      rank: 1,
+      user: "Deebs DeFi",
+      handle: "@Deebs_DeFi",
+      avatar: "https://via.placeholder.com/40/FF2E92/FFFFFF?text=DD",
+      verified: true,
+      followers: "45.6K",
+      following: "810",
+      mindshare: "2.625%",
+      change: "+1.043%",
+      earnings: "0.5 MNT",
+      earningsUsd: "$74",
+      isPositive: true,
+      badge: "👑"
+    },
+    {
+      rank: 2,
+      user: "SALAMANDER",
+      handle: "@SALAMANDER12_",
+      avatar: "https://via.placeholder.com/40/A020F0/FFFFFF?text=SA",
+      verified: true,
+      followers: "15.5K",
+      following: "572",
+      mindshare: "2.171%",
+      change: "+1.193%",
+      earnings: "0.4 MNT",
+      earningsUsd: "$61",
+      isPositive: true,
+      badge: "⚡"
+    },
+    {
+      rank: 3,
+      user: "Faded",
+      handle: "@yourfadedwealth",
+      avatar: "https://via.placeholder.com/40/FF2E92/FFFFFF?text=FA",
+      verified: true,
+      followers: "40.5K",
+      following: "1.4K",
+      mindshare: "1.863%",
+      change: "-0.037%",
+      earnings: "0.4 MNT",
+      earningsUsd: "$52",
+      isPositive: false,
+      badge: "🥉"
+    },
+    {
+      rank: 4,
+      user: "Rippy",
+      handle: "@rippyfied",
+      avatar: "https://via.placeholder.com/40/A020F0/FFFFFF?text=RI",
+      verified: true,
+      followers: "5.5K",
+      following: "1.1K",
+      mindshare: "1.833%",
+      change: "+0.797%",
+      earnings: "0.4 MNT",
+      earningsUsd: "$51",
+      isPositive: true,
+      badge: ""
+    },
+    {
+      rank: 5,
+      user: "Nazoku.eth",
+      handle: "@Nazo_ku",
+      avatar: "https://via.placeholder.com/40/FF2E92/FFFFFF?text=NA",
+      verified: true,
+      followers: "10.7K",
+      following: "31",
+      mindshare: "1.520%",
+      change: "+0.675%",
+      earnings: "0.3 MNT",
+      earningsUsd: "$43",
+      isPositive: true,
+      badge: ""
+    },
+    {
+      rank: 6,
+      user: "Tut",
+      handle: "@Tuteth_",
+      avatar: "https://via.placeholder.com/40/A020F0/FFFFFF?text=TU",
+      verified: true,
+      followers: "24.3K",
+      following: "796",
+      mindshare: "1.435%",
+      change: "-0.202%",
+      earnings: "0.3 MNT",
+      earningsUsd: "$40",
+      isPositive: false,
+      badge: ""
+    },
+    {
+      rank: 7,
+      user: "Nick",
+      handle: "@NicholasKGarvin",
+      avatar: "https://via.placeholder.com/40/FF2E92/FFFFFF?text=NI",
+      verified: true,
+      followers: "8.9K",
+      following: "568",
+      mindshare: "1.348%",
+      change: "+1.109%",
+      earnings: "0.3 MNT",
+      earningsUsd: "$38",
+      isPositive: true,
+      badge: ""
+    },
+    {
+      rank: 8,
+      user: "Splin Teron",
+      handle: "@splinteron",
+      avatar: "https://via.placeholder.com/40/A020F0/FFFFFF?text=SP",
+      verified: true,
+      followers: "66.3K",
+      following: "689",
+      mindshare: "1.296%",
+      change: "+0.618%",
+      earnings: "0.3 MNT",
+      earningsUsd: "$35",
+      isPositive: true,
+      badge: ""
+    }
+  ];
+
+  return (
+    <section className="relative py-8 md:py-16 overflow-hidden mt-[50px]">
+      {/* Background */}
+      <div className="absolute inset-0">
+        <div 
+          className="absolute inset-0 backdrop-blur-sm rounded-3xl mx-2 sm:mx-4 lg:mx-8"
+          style={{ 
+            background: 'rgba(17, 17, 17, 0.4)',
+            border: '1px solid rgba(160, 32, 240, 0.3)'
+          }}
+        ></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="grid grid-cols-1 xl:grid-cols-4 gap-6 lg:gap-8">
+          
+          {/* Leaderboard Section */}
+          <div className="xl:col-span-3">
+            <div 
+              className="backdrop-blur-sm rounded-2xl p-4 sm:p-6"
+              style={{ 
+                background: 'rgba(17, 17, 17, 0.6)',
+                border: '1px solid rgba(160, 32, 240, 0.3)'
+              }}
+            >
+              
+              {/* Header */}
+              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6 space-y-4 lg:space-y-0">
+                <div className="flex items-center space-x-4">
+                  <h2 className="text-xl sm:text-2xl font-bold text-white">
+                    Who's the{" "}
+                    <span 
+                      style={{
+                        background: 'linear-gradient(135deg, #FF2E92 0%, #A020F0 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        backgroundClip: 'text'
+                      }}
+                    >
+                      Loudest?
+                    </span>
+                  </h2>
+                </div>
                 
-                {/* Header */}
-                <div className="flex items-center justify-between mb-6">
-                  <div className="flex items-center space-x-4">
-                    <h2 className="text-2xl font-bold text-white">
-                      Who's the{" "}
-                      <span 
-                        style={{
-                          background: 'linear-gradient(135deg, #FF2E92 0%, #A020F0 100%)',
-                          WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent',
-                          backgroundClip: 'text'
-                        }}
-                      >
-                        Loudest?
-                      </span>
-                    </h2>
+                <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-3 sm:space-y-0 sm:space-x-4">
+                  <div className="relative w-full sm:w-auto">
+                    <input
+                      type="text"
+                      placeholder="Search users..."
+                      className="bg-gray-800/60 rounded-xl px-4 py-2 pl-10 text-white placeholder-gray-400 focus:outline-none w-full sm:w-64"
+                      style={{ 
+                        border: '1px solid rgba(160, 32, 240, 0.3)'
+                      }}
+                    />
+                    <svg className="w-4 h-4 text-gray-400 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
                   </div>
-                  <div className="flex items-center space-x-4">
-                    <div className="relative">
-                      <input
-                        type="text"
-                        placeholder="Search users..."
-                        className="bg-gray-800/60 rounded-xl px-4 py-2 pl-10 text-white placeholder-gray-400 focus:outline-none w-64"
-                        style={{ 
-                          border: '1px solid rgba(160, 32, 240, 0.3)',
-                        //   focusBorderColor: 'rgba(255, 46, 146, 0.5)'
-                        }}
-                      />
-                      <svg className="w-4 h-4 text-gray-400 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                      </svg>
-                    </div>
-                    <div className="flex items-center space-x-2 text-gray-400 text-sm">
+                  
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-4 text-gray-400 text-xs sm:text-sm">
+                    <div className="flex items-center space-x-2">
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
-                      <span>Kaito feed updates every hour</span>
+                      <span className="whitespace-nowrap">Kaito feed updates every hour</span>
                     </div>
-                    <div className="flex items-center space-x-2 text-gray-400 text-sm">
+                    <div className="flex items-center space-x-2">
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
@@ -194,26 +198,30 @@ function Leaderboard() {
                     </div>
                   </div>
                 </div>
-  
-                {/* Table Header */}
-                <div className="grid grid-cols-12 gap-4 mb-4 pb-3" style={{ borderBottom: '1px solid rgba(160, 32, 240, 0.3)' }}>
-                  <div className="col-span-1 text-gray-400 text-sm font-medium">RANK</div>
-                  <div className="col-span-4 text-gray-400 text-sm font-medium">USER</div>
-                  <div className="col-span-2 text-gray-400 text-sm font-medium text-center">MINDSHARE</div>
-                  <div className="col-span-2 text-gray-400 text-sm font-medium text-center">CHANGE</div>
-                  <div className="col-span-3 text-gray-400 text-sm font-medium text-right">EARNINGS</div>
-                </div>
-  
-                {/* Scrollable User List */}
-                <div 
-                  className="max-h-[600px] overflow-y-auto"
-                  style={{ 
-                    scrollbarWidth: 'thin',
-                    scrollbarColor: 'rgba(160, 32, 240, 0.5) transparent'
-                  }}
-                >
-                  {leaderboardData.map((user) => (
-                    <div key={user.rank} className="grid grid-cols-12 gap-4 items-center py-4 hover:bg-gray-800/30 rounded-xl transition-colors duration-200 group">
+              </div>
+
+              {/* Desktop Table Header - Hidden on mobile */}
+              <div className="hidden md:grid md:grid-cols-12 gap-4 mb-4 pb-3" style={{ borderBottom: '1px solid rgba(160, 32, 240, 0.3)' }}>
+                <div className="col-span-1 text-gray-400 text-sm font-medium">RANK</div>
+                <div className="col-span-4 text-gray-400 text-sm font-medium">USER</div>
+                <div className="col-span-2 text-gray-400 text-sm font-medium text-center">MINDSHARE</div>
+                <div className="col-span-2 text-gray-400 text-sm font-medium text-center">CHANGE</div>
+                <div className="col-span-3 text-gray-400 text-sm font-medium text-right">EARNINGS</div>
+              </div>
+
+              {/* Scrollable User List */}
+              <div 
+                className="max-h-[600px] overflow-y-auto"
+                style={{ 
+                  scrollbarWidth: 'thin',
+                  scrollbarColor: 'rgba(160, 32, 240, 0.5) transparent'
+                }}
+              >
+                {leaderboardData.map((user) => (
+                  <div key={user.rank} className="hover:bg-gray-800/30 rounded-xl transition-colors duration-200 group">
+                    
+                    {/* Desktop Layout */}
+                    <div className="hidden md:grid md:grid-cols-12 gap-4 items-center py-4">
                       
                       {/* Rank */}
                       <div className="col-span-1 flex items-center">
@@ -233,7 +241,7 @@ function Leaderboard() {
                           </span>
                         </div>
                       </div>
-  
+
                       {/* User Info */}
                       <div className="col-span-4 flex items-center space-x-3">
                         <img 
@@ -263,12 +271,12 @@ function Leaderboard() {
                           <div className="text-gray-400 text-left text-sm">{user.handle}</div>
                         </div>
                       </div>
-  
+
                       {/* Mindshare */}
                       <div className="col-span-2 text-center">
                         <span className="text-white font-semibold text-lg">{user.mindshare}</span>
                       </div>
-  
+
                       {/* Change */}
                       <div className="col-span-2 text-center">
                         <div className={`flex items-center justify-center space-x-1 ${user.isPositive ? 'text-pink-400' : 'text-red-400'}`}>
@@ -278,7 +286,7 @@ function Leaderboard() {
                           <span className="font-medium">{user.change}</span>
                         </div>
                       </div>
-  
+
                       {/* Earnings */}
                       <div className="col-span-3 text-right">
                         <div 
@@ -295,113 +303,209 @@ function Leaderboard() {
                         <div className="text-gray-400 text-sm">{user.earningsUsd}</div>
                       </div>
                     </div>
-                  ))}
-                </div>
+                    
+                    {/* Mobile Layout */}
+                    <div className="md:hidden p-4 border-b border-gray-700/50 last:border-b-0">
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="flex items-center space-x-3">
+                          <div className="flex items-center space-x-2">
+                            {user.rank <= 3 && (
+                              <span className="text-lg">{user.badge}</span>
+                            )}
+                            <span 
+                              className={`font-bold text-lg ${
+                                user.rank === 1 ? 'text-pink-400' : 
+                                user.rank === 2 ? 'text-gray-300' : 
+                                user.rank === 3 ? 'text-purple-400' : 
+                                'text-gray-400'
+                              }`}
+                            >
+                              #{user.rank}
+                            </span>
+                          </div>
+                          
+                          <img 
+                            src={user.avatar} 
+                            alt={user.user}
+                            className="w-12 h-12 rounded-full"
+                          />
+                          
+                          <div>
+                            <div className="flex items-center space-x-2">
+                              <span className="text-white font-semibold text-lg">{user.user}</span>
+                              {user.verified && (
+                                <svg className="w-4 h-4" fill="#FF2E92" viewBox="0 0 20 20">
+                                  <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                </svg>
+                              )}
+                            </div>
+                            <div className="text-gray-400 text-sm">{user.handle}</div>
+                          </div>
+                        </div>
+                        
+                        <div className="text-right">
+                          <div 
+                            className="font-bold text-lg"
+                            style={{
+                              background: 'linear-gradient(135deg, #FF2E92 0%, #A020F0 100%)',
+                              WebkitBackgroundClip: 'text',
+                              WebkitTextFillColor: 'transparent',
+                              backgroundClip: 'text'
+                            }}
+                          >
+                            {user.earnings}
+                          </div>
+                          <div className="text-gray-400 text-sm">{user.earningsUsd}</div>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-4 text-gray-400 text-sm">
+                          <div className="flex items-center space-x-1">
+                            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            <span>{user.followers}</span>
+                          </div>
+                          <div className="flex items-center space-x-1">
+                            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+                            </svg>
+                            <span>{user.following}</span>
+                          </div>
+                        </div>
+                        
+                        <div className="flex items-center space-x-4">
+                          <div className="text-center">
+                            <div className="text-gray-400 text-xs">Mindshare</div>
+                            <span className="text-white font-semibold">{user.mindshare}</span>
+                          </div>
+                          <div className="text-center">
+                            <div className="text-gray-400 text-xs">Change</div>
+                            <div className={`flex items-center justify-center space-x-1 ${user.isPositive ? 'text-pink-400' : 'text-red-400'}`}>
+                              <svg className={`w-3 h-3 ${user.isPositive ? 'rotate-0' : 'rotate-180'}`} fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                              </svg>
+                              <span className="font-medium text-sm">{user.change}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-  
-            {/* Info Panel */}
-            <div className="lg:col-span-1">
+          </div>
+
+          {/* Info Panel */}
+          <div className="xl:col-span-1">
+            <div 
+              className="backdrop-blur-sm rounded-2xl p-4 sm:p-6 xl:sticky xl:top-8"
+              style={{ 
+                background: 'rgba(17, 17, 17, 0.6)',
+                border: '1px solid rgba(160, 32, 240, 0.3)'
+              }}
+            >
+              
+              {/* What is Loud Header */}
+              <div className="flex items-center space-x-3 mb-6">
+                <div 
+                  className="w-12 h-12 rounded-xl flex items-center justify-center"
+                  style={{ background: 'linear-gradient(135deg, #FF2E92 0%, #A020F0 100%)' }}
+                >
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white">What is Loud?</h3>
+                  <p className="text-sm" style={{ color: '#FF2E92' }}>@stayloudio</p>
+                </div>
+              </div>
+
+              {/* Description */}
+              <div className="space-y-4 mb-6">
+                <p className="text-gray-300 text-sm leading-relaxed">
+                Hooter is an experiment that explores perpetual incentives for social engagement. The core idea: what happens when you reward people for talking about a token{" "}
+                  <span 
+                    className="font-semibold"
+                    style={{
+                      background: 'linear-gradient(135deg, #FF2E92 0%, #A020F0 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text'
+                    }}
+                  >
+                    forever?
+                  </span>
+                </p>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Every week, trading volume generates swap fees that get distributed to the top contributors of Hooter's mindshare - creating a sustainable cycle of engagement and rewards.
+                </p>
+              </div>
+
+              {/* How it Works */}
+              <div className="space-y-4 mb-6">
+                <div className="flex items-center space-x-2">
+                  <svg className="w-4 h-4" fill="none" stroke="#FF2E92" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                  <span className="text-white font-semibold">How it Works:</span>
+                </div>
+                
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ background: '#FF2E92' }}></div>
+                    <p className="text-gray-300 text-sm">Tweet about Hooter to earn mindshare</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ background: '#FF2E92' }}></div>
+                    <p className="text-gray-300 text-sm">Top contributors earn rewards each week</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ background: '#FF2E92' }}></div>
+                    <p className="text-gray-300 text-sm">Rewards come from actual trading fees and are distributed in MNT</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Note */}
               <div 
-                className="backdrop-blur-sm rounded-2xl p-6 sticky top-8"
+                className="rounded-xl p-4 mb-6"
                 style={{ 
-                  background: 'rgba(17, 17, 17, 0.6)',
+                  background: 'rgba(17, 17, 17, 0.5)',
                   border: '1px solid rgba(160, 32, 240, 0.3)'
                 }}
               >
-                
-                {/* What is Loud Header */}
-                <div className="flex items-center space-x-3 mb-6">
-                  <div 
-                    className="w-12 h-12 rounded-xl flex items-center justify-center"
-                    style={{ background: 'linear-gradient(135deg, #FF2E92 0%, #A020F0 100%)' }}
-                  >
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white">What is Loud?</h3>
-                    <p className="text-sm" style={{ color: '#FF2E92' }}>@stayloudio</p>
-                  </div>
-                </div>
-  
-                {/* Description */}
-                <div className="space-y-4 mb-6">
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    Loud is an experiment that explores perpetual incentives for social engagement. The core idea: what happens when you reward people for talking about a coin,{" "}
-                    <span 
-                      className="font-semibold"
-                      style={{
-                        background: 'linear-gradient(135deg, #FF2E92 0%, #A020F0 100%)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        backgroundClip: 'text'
-                      }}
-                    >
-                      forever?
-                    </span>
-                  </p>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    Every week, trading volume generates swap fees that get distributed to the top contributors of Loud's mindshare - creating a sustainable cycle of engagement and rewards.
-                  </p>
-                </div>
-  
-                {/* How it Works */}
-                <div className="space-y-4 mb-6">
-                  <div className="flex items-center space-x-2">
-                    <svg className="w-4 h-4" fill="none" stroke="#FF2E92" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg>
-                    <span className="text-white font-semibold">How it Works:</span>
-                  </div>
-                  
-                  <div className="space-y-3">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ background: '#FF2E92' }}></div>
-                      <p className="text-gray-300 text-sm">Tweet about Loud to earn mindshare</p>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ background: '#FF2E92' }}></div>
-                      <p className="text-gray-300 text-sm">Top contributors earn rewards each week</p>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ background: '#FF2E92' }}></div>
-                      <p className="text-gray-300 text-sm">Rewards come from actual trading fees and are distributed in SOL</p>
-                    </div>
-                  </div>
-                </div>
-  
-                {/* Note */}
-                <div 
-                  className="rounded-xl p-4 mb-6"
-                  style={{ 
-                    background: 'rgba(17, 17, 17, 0.5)',
-                    border: '1px solid rgba(160, 32, 240, 0.3)'
-                  }}
-                >
-                  <p className="text-gray-400 text-sm">
-                    <span style={{ color: '#FF2E92' }} className="font-medium">Note:</span> You need to register your wallet to claim fees.
-                  </p>
-                </div>
-  
-                {/* Follow Button */}
-                <button 
-                  className="w-full text-white font-semibold py-3 px-4 rounded-xl transition-colors duration-200 flex items-center justify-center space-x-2"
-                  style={{ background: 'linear-gradient(135deg, #FF2E92 0%, #A020F0 100%)' }}
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
-                  </svg>
-                  <span>Follow Loud</span>
-                </button>
+                <p className="text-gray-400 text-sm">
+                  <span style={{ color: '#FF2E92' }} className="font-medium">Note:</span> You need to register your wallet to claim fees.
+                </p>
               </div>
+
+              {/* Follow Button */}
+              <a
+  href="https://x.com/hooterme"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button 
+    className="w-full text-white font-semibold py-3 px-4 rounded-xl transition-colors duration-200 flex items-center justify-center space-x-2"
+    style={{ background: 'linear-gradient(135deg, #FF2E92 0%, #A020F0 100%)' }}
+  >
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+    </svg>
+    <span>Follow Hooter</span>
+  </button>
+</a>
             </div>
-  
           </div>
+
         </div>
-      </section>
-    );
-  }
-  
-  export default Leaderboard;
+      </div>
+    </section>
+  );
+}
+
+export default Leaderboard;

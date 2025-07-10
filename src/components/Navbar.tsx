@@ -23,8 +23,8 @@ function Navbar() {
               </svg>
             </div>
             <div>
-              <h1 className="text-white text-left font-bold text-xl leading-tight">Loud</h1>
-              <p className="text-gray-400 text-sm leading-tight">The loudest always win</p>
+              <h1 className="text-white text-left font-bold text-xl leading-tight">Hooter</h1>
+              <p className="text-gray-400 text-sm leading-tight">Earn by hooting bold.</p>
             </div>
           </div>
 
@@ -37,7 +37,7 @@ function Navbar() {
                 </svg>
               </div>
               <div className="flex flex-col min-w-0 flex-shrink-0">
-                <span className="text-white font-bold text-sm">$LOUD</span>
+                <span className="text-white font-bold text-sm">$HTR</span>
                 <span className="text-gray-400 text-xs">Token</span>
               </div>
               <div className="w-px h-8 bg-gray-700 flex-shrink-0"></div>
@@ -79,16 +79,23 @@ function Navbar() {
 
           {/* RIGHT SECTION */}
           <div className="flex items-center space-x-4 flex-shrink-0">
-            <button 
-              className="hidden sm:flex items-center space-x-2 text-white font-bold px-6 py-2.5 rounded-xl transition-all duration-200 hover:scale-105"
-              style={{ background: 'linear-gradient(135deg, #FF2E92 0%, #A020F0 100%)' }}
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round"
-                  d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-              </svg>
-              <span>Connect</span>
-            </button>
+          <a
+  href="https://x.com/hooterme"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button 
+    className="hidden sm:flex items-center space-x-2 text-white font-bold px-6 py-2.5 rounded-xl transition-all duration-200 hover:scale-105"
+    style={{ background: 'linear-gradient(135deg, #FF2E92 0%, #A020F0 100%)' }}
+  >
+    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+      <path strokeLinecap="round" strokeLinejoin="round"
+        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+    </svg>
+    <span>Connect</span>
+  </button>
+</a>
+
 
             {/* Mobile Menu Button */}
             <button 
@@ -117,7 +124,7 @@ function Navbar() {
                       </svg>
                     </div>
                     <div>
-                      <span className="text-white font-bold text-base block">$LOUD</span>
+                      <span className="text-white font-bold text-base block">$HTR</span>
                       <span className="text-gray-400 text-sm">Token</span>
                     </div>
                   </div>

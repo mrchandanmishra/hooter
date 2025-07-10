@@ -52,7 +52,7 @@ function Hero() {
         <div className="mb-8 mt-[100px] flex justify-center items-center gap-4 flex-wrap py-1">
           {/* STAY */}
           <h1 className="text-6xl sm:text-7xl lg:text-8xl xl:text-8xl font-black text-white leading-none">
-            STAY
+            HOOT &
           </h1>
         
           {/* LOUD with gradient and glow */}
@@ -66,13 +66,13 @@ function Hero() {
                 backgroundClip: 'text'
               }}
             >
-              LOUD
+              EARN
             </h1>
             <div 
               className="absolute inset-0 text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-black leading-none blur-2xl animate-pulse"
               style={{ color: '#FF2E92', opacity: 0.3 }}
             >
-              LOUD
+              EARN
             </div>
           </div>
         </div>
@@ -112,8 +112,7 @@ function Hero() {
             ></div>
           </div>
           <span style={{ color: '#FF2E92' }} className="font-medium">
-            The loudest always win
-          </span>
+          Earn by hooting bold.          </span>
           <div className="w-px h-4" style={{ background: 'rgba(255, 46, 146, 0.4)' }}></div>
           <span className="text-gray-300 text-sm">
             Next payout: June 22, 2025
@@ -200,7 +199,7 @@ function StatsSection() {
                     backgroundClip: 'text'
                   }}
                 >
-                  7.9 SOL
+                  7.9 MNT
                 </span>
               </div>
               <div className="text-gray-500 text-sm text-left">$1,097</div>
@@ -288,10 +287,10 @@ function StatsSection() {
                 </span>
               </div>
               <div className="flex items-center space-x-1">
-                <svg className="w-3 h-3 text-red-400" fill="currentColor" viewBox="0 0 20 20">
+                {/* <svg className="w-3 h-3 text-red-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M14.707 12.293a1 1 0 010 1.414L10 19.414l-4.707-5.707a1 1 0 011.414-1.414L10 15.586l3.293-3.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
-                <span className="text-red-400 text-sm font-medium">-15.2% 24h</span>
+                </svg> */}
+                {/* <span className="text-red-400 text-sm font-medium">-15.2% 24h</span> */}
               </div>
             </div>
           </div>
