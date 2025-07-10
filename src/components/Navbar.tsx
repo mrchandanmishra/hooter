@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import logo from "../assets/hooter_logo.png"
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,11 +18,12 @@ function Navbar() {
           
           {/* LEFT SECTION */}
           <div className="flex items-center space-x-3 flex-shrink-0">
-            <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #FF2E92 0%, #A020F0 100%)' }}>
-              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-              </svg>
-            </div>
+          <img
+    src={logo}  // Update the path if it's different
+    alt="Logo"
+    
+    className="w-12 h-12 object-contain"
+  />
             <div>
               <h1 className="text-white text-left font-bold text-xl leading-tight">Hooter</h1>
               <p className="text-gray-400 text-sm leading-tight">Earn by hooting bold.</p>
@@ -31,11 +33,12 @@ function Navbar() {
           {/* CENTER SECTION - DESKTOP */}
           <div className="hidden lg:flex items-center justify-center flex-1 max-w-md mx-8">
             <div className="flex items-center space-x-3 bg-gray-800/80 backdrop-blur-sm rounded-xl px-4 py-2.5 border w-full" style={{ borderColor: '#A020F0' }}>
-              <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #FF2E92 0%, #A020F0 100%)' }}>
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-                </svg>
-              </div>
+            <img
+    src={logo}  // Update the path if it's different
+    alt="Logo"
+    
+    className="w-12 h-12 object-contain"
+  />
               <div className="flex flex-col min-w-0 flex-shrink-0">
                 <span className="text-white font-bold text-sm">$HTR</span>
                 <span className="text-gray-400 text-xs">Token</span>
@@ -118,11 +121,12 @@ function Navbar() {
               <div className="bg-gray-900/80 backdrop-blur-sm rounded-xl p-4 border mx-2" style={{ borderColor: '#A020F0' }}>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #FF2E92 0%, #A020F0 100%)' }}>
-                      <svg className="w-6 h-6 text-white font-bold" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                      </svg>
-                    </div>
+                  <img
+    src={logo}  // Update the path if it's different
+    alt="Logo"
+    
+    className="w-12 h-12 object-contain"
+  />
                     <div>
                       <span className="text-white font-bold text-base block">$HTR</span>
                       <span className="text-gray-400 text-sm">Token</span>
